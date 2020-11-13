@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur de caractères</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+</head>
+<body class="bg-light min-vh-100 d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-info mb-4">Ce texte contient 0 caractères</div>
+
+                <form name="charactersCounterForm">
+                    <div class="mb-3">
+                        <label for="texte" class="form-label">Texte à analyser</label>
+                        <textarea class="form-control" id="texte" name="textToAnalyse" rows="3" placeholder="Tape du texte ici..."></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #efefef;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 1px 4px #00000080;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.checklist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    min-width: 400px;
+}
+
+.checklist-item {
+    padding: 1rem;
+    border: solid 1px #ccc;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    transition: border .3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.checklist-item:hover {
+    border-left: solid 5px #ff8a65;
+}
+
+.checklist-item-checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 1rem;
+    width: 0;
+    height: 3px;
+    border-radius: 9999px;
+    background-color: #ff8a65;
+    animation: check 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes check {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: calc(100% - 2rem);
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur d'âge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+</head>
+<body class="bg-light min-vh-100 d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success mb-4 js-notification">
+                    Tu as ...
+                </div>
+
+                <form name="ageCalculatorForm">
+                    <div class="mb-3">
+                        <label for="naissance" class="form-label">En quelle année es-tu né(e) ?</label>
+                        <input type="number" class="form-control" id="naissance" name="birthyear" placeholder="Tape ton année de naissance ici...">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

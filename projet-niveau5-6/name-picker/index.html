@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirage au sort d'un prénom</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    
+    <div class="container my-5">
+        <form class="row" name="ageCalculatorForm">
+            <div class="col-auto flex-grow-1">
+                <label for="prenom" class="visually-hidden">Prénom à ajouter</label>
+                <input type="text" class="form-control" id="prenom" name="firstname" placeholder="Prénom à ajouter" autofocus>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary" type="submit">Ajouter</button>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center text-center mt-4">
+            <div class="card p-4">
+                <div class="text-center js-result">
+                    <div class="spinner-grow text-primary"></div>
+                    <div class="text-muted">En attente des prénoms...</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary">Tirer au sort un prénom</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devine le temps qu'il fait !</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+</head>
+<body class="bg-light min-vh-100 d-flex align-items-center">
+    
+    <div class="container my-5 text-center">
+        <p class="display-6 mb-4">Quelle est la température à <span class="js-city badge rounded-pill bg-primary">{ville}</span> ?</p>
+        <div class="js-notification alert alert-info d-none"></div>
+        <form class="row justify-content-center" name="weatherForm" autocomplete="off">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="mb-4">
+                    <label for="temperature" class="visually-hidden">Ta proposition</label>
+                    <input type="number" class="form-control border-4 form-control-lg text-center" id="temperature" name="userTemperature" placeholder="Tape ta proposition ici !" autofocus>
+                </div>
+                <button class="btn btn-lg rounded-pill btn-primary d-inline-flex align-items-center" type="submit"><span class="js-loading d-none spinner-border text-light mr-2"></span>Valider</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
